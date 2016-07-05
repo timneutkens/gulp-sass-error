@@ -1,0 +1,18 @@
+{
+  "name": "gulp-sass-error",
+  "version": "1.0.0",
+  "description": "Throw error when gulp-sass fails. Useful for build tools",
+  "main": "dist/index.js",
+  "author": "Tim Neutkens",
+  "license": "MIT",
+  "typings": "dist/index",
+  "devDependencies": {
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.7"
+  },
+  "peerDependencies": {
+    "gulp-sass": "^2.3.2"
+  }
+}
