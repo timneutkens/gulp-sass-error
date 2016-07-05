@@ -7,7 +7,7 @@ By default [gulp-sass](https://www.npmjs.com/package/gulp-sass) never throws a c
 ## Usage
 ```javascript
 const throwError       = true;
-const gulpSassError    = require('gulp-sass-error')(gulpSassError);
+const gulpSassError    = require('gulp-sass-error')(throwError);
 
 gulp.task('sass', () => {
     return gulp.src('web/css/*.scss')
