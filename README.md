@@ -5,18 +5,35 @@ By default [gulp-sass](https://www.npmjs.com/package/gulp-sass) never throws a c
 `npm install --save gulp-sass-error`
 
 ## Usage
+Using es2015 modules / typescript:
 ```javascript
-const throwError       = true;
-const gulpSassError    = require('gulp-sass-error')(throwError);
+import { gulpSassError } from 'gulp-sass-error';
+const throwError = true;
 
 gulp.task('sass', () => {
     return gulp.src('web/css/*.scss')
         .pipe(
             sass()
             /** Instead of sass.logError you use gulpSassError */             
-            .on('error', gulpSassError)
+            .on('error', gulpSassError(throwError))
         )
         .pipe(postcss(config.postcss))
         .pipe(gulp.dest('web/css'));
 });
 ```
+
+Using require:
+```javascript
+const sassError  = require('gulp-sass-error').gulpSassError;
+const throwError = true;
+
+gulp.task('sass', () => {
+    return gulp.src('web/css/*.scss')
+        .pipe(
+            sass()
+            /** Instead of sass.logError you use gulpSassError */             
+            .on('error', gulpSassError(throwError))
+        )
+        .pipe(postcss(config.postcss))
+        .pipe(gulp.dest('web/css'));
+});
