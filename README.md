@@ -24,7 +24,7 @@ gulp.task('sass', () => {
 
 Using require:
 ```javascript
-const sassError  = require('gulp-sass-error').gulpSassError;
+const { gulpSassError } = require('gulp-sass-error');
 const throwError = true;
 
 gulp.task('sass', () => {

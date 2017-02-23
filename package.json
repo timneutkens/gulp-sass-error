@@ -1,6 +1,6 @@
 {
   "name": "gulp-sass-error",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Throw error when gulp-sass fails. Useful for build tools",
   "main": "dist/index.js",
   "author": "Tim Neutkens",
