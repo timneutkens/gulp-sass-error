@@ -1,6 +1,6 @@
 {
   "name": "gulp-sass-error",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Throw error when gulp-sass fails. Useful for build tools",
   "main": "dist/index.js",
   "author": "Tim Neutkens",
@@ -18,5 +18,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/timneutkens/gulp-sass-error.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build"
   }
 }
