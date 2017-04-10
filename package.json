@@ -13,7 +13,7 @@
     "gulp-util": "^3.0.7"
   },
   "peerDependencies": {
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": ">=2.3.2 <4.0.0"
   },
   "repository": {
     "type": "git",
