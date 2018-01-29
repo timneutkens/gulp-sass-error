@@ -1,4 +1,4 @@
-import { PluginError } from 'gulp-util';
+import { PluginError } from 'plugin-error';
 
 export interface Error {
     messageFormatted: string
